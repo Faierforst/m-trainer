@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MARATHON TRAINER PRO</title>
-  <link rel="apple-touch-icon" href="image.png">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon" href="image.png">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -22,50 +22,51 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:1.25re
 .logo span{color:var(--accent)}
 
 /* HERO & COUNTDOWN */
-.hero{padding:4rem 2.5rem; position:relative; text-align:center}
-.hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,10vw,6rem);line-height:0.9;margin-bottom:2rem}
+.hero{padding:3rem 2.5rem; position:relative; text-align:center}
+.hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.5rem,8vw,5rem);line-height:0.9;margin-bottom:1.5rem}
 .hero h1 em{color:var(--accent);font-style:normal}
 
-.cd-container{display:flex;justify-content:center;gap:1.5rem;margin-top:1rem}
-.cd-box{text-align:center; min-width:80px}
-.cd-num{font-family:'Bebas Neue',sans-serif;font-size:4.5rem;line-height:1;color:var(--text);display:block}
-.cd-unit{font-size:0.75rem;text-transform:uppercase;color:var(--accent);font-weight:700;letter-spacing:1px}
+.cd-container{display:flex;justify-content:center;gap:1rem;margin-top:0.5rem}
+.cd-box{text-align:center; min-width:65px}
+.cd-num{font-family:'Bebas Neue',sans-serif;font-size:3.5rem;line-height:1;color:var(--text);display:block}
+.cd-unit{font-size:0.65rem;text-transform:uppercase;color:var(--accent);font-weight:700;letter-spacing:1px}
 
 /* STATS */
 .stats-bar{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--border);border-bottom:1px solid var(--border);margin:0 2.5rem;background:var(--s1)}
-.stat-item{padding:1.5rem;border-right:1px solid var(--border);text-align:center}
+.stat-item{padding:1.2rem;border-right:1px solid var(--border);text-align:center}
 .stat-item:last-child{border-right:none}
-.stat-lbl{font-size:0.65rem;text-transform:uppercase;color:var(--muted);margin-bottom:0.3rem;font-weight:700}
-.stat-val{font-family:'Bebas Neue',sans-serif;font-size:2.5rem;line-height:1}
+.stat-lbl{font-size:0.6rem;text-transform:uppercase;color:var(--muted);margin-bottom:0.2rem;font-weight:700}
+.stat-val{font-family:'Bebas Neue',sans-serif;font-size:2.2rem;line-height:1}
 
 /* GRID */
-.main{padding:3rem 2.5rem;display:grid;grid-template-columns:1fr 380px;gap:2.5rem}
+.main{padding:2rem 2.5rem;display:grid;grid-template-columns:1fr 380px;gap:2rem}
 
 /* PLANER LOOK */
-.section-title{font-family:'Bebas Neue',sans-serif; font-size:1.8rem; margin-bottom:1.5rem; letter-spacing:1px; display:flex; justify-content:space-between; align-items:center}
-.plan-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(140px, 1fr)); gap:12px}
-.plan-card-day{background:var(--s1); border:1px solid var(--border); border-radius:var(--r); padding:1rem; min-height:180px; transition:0.3s; position:relative; overflow:hidden}
+.section-title{font-family:'Bebas Neue',sans-serif; font-size:1.6rem; margin-bottom:1.2rem; letter-spacing:1px; display:flex; justify-content:space-between; align-items:center}
+.plan-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:12px}
+.plan-card-day{background:var(--s1); border:1px solid var(--border); border-radius:var(--r); padding:1rem; min-height:200px; transition:0.3s; position:relative; display:flex; flex-direction:column}
 .plan-card-day.today{border-color:var(--accent); background:var(--accent-dim)}
-.day-head{display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:1rem}
-.day-n{font-size:0.7rem; font-weight:800; color:var(--muted); text-transform:uppercase}
-.day-v{font-family:'Bebas Neue',sans-serif; font-size:1.5rem; line-height:1}
+.day-head{display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.8rem}
+.day-n{font-size:0.65rem; font-weight:800; color:var(--muted); text-transform:uppercase}
+.day-v{font-family:'Bebas Neue',sans-serif; font-size:1.4rem; line-height:1}
 
-.run-details{font-size:0.8rem; line-height:1.4}
-.run-details b{display:block; font-size:1.1rem; font-family:'Bebas Neue'; color:var(--accent)}
-.pace-tag{font-size:0.65rem; color:var(--amber); font-weight:700}
+.run-entry{background:var(--s2); padding:0.8rem; border-radius:10px; margin-bottom:0.8rem; border-left:3px solid var(--accent); position:relative}
+.run-entry b{display:block; font-family:'Bebas Neue'; font-size:1.2rem; color:var(--text); margin-bottom:2px}
+.run-note{font-size:0.8rem; color:var(--muted); line-height:1.3; margin-top:5px; font-style:italic; word-break:break-word}
+.run-meta{font-size:0.7rem; color:var(--amber); font-weight:700; margin-top:3px}
 
 /* FORMS */
-.sidebar-card{background:var(--s1); border:1px solid var(--border); border-radius:var(--r); padding:2rem; position:sticky; top:100px}
-.form-group{margin-bottom:1.2rem}
-.label{font-size:0.65rem; font-weight:800; color:var(--muted); text-transform:uppercase; margin-bottom:0.5rem; display:block}
-input, select{width:100%; background:var(--s2); border:1px solid var(--border); padding:0.8rem; color:#fff; border-radius:10px; font-family:inherit; outline:none}
-input:focus{border-color:var(--accent)}
+.sidebar-card{background:var(--s1); border:1px solid var(--border); border-radius:var(--r); padding:1.8rem; position:sticky; top:100px}
+.form-group{margin-bottom:1rem}
+.label{font-size:0.65rem; font-weight:800; color:var(--muted); text-transform:uppercase; margin-bottom:0.4rem; display:block}
+input, select, textarea{width:100%; background:var(--s2); border:1px solid var(--border); padding:0.7rem; color:#fff; border-radius:10px; font-family:inherit; outline:none}
+textarea{resize:none; height:80px}
+input:focus, textarea:focus{border-color:var(--accent)}
 
-.btn{width:100%; padding:1rem; border-radius:10px; border:none; font-weight:800; text-transform:uppercase; cursor:pointer; transition:0.2s; font-family:inherit}
+.btn{width:100%; padding:0.9rem; border-radius:10px; border:none; font-weight:800; text-transform:uppercase; cursor:pointer; transition:0.2s; font-family:inherit}
 .btn-primary{background:var(--accent); color:white; margin-bottom:0.5rem}
-.btn-primary:hover{transform:scale(1.02); background:#ff6340}
 .btn-outline{background:transparent; border:1px solid var(--border); color:white}
-.btn-outline:hover{background:var(--s2)}
+.btn-del{background:none; border:none; color:#ff4444; font-size:0.6rem; cursor:pointer; text-transform:uppercase; font-weight:700; margin-top:8px}
 
 /* MODAL */
 .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.9); display:none; align-items:center; justify-content:center; z-index:1000; backdrop-filter:blur(10px)}
@@ -83,7 +84,7 @@ input:focus{border-color:var(--accent)}
 </nav>
 
 <section class="hero">
-  <h1>HALLO <span id="nameDisp">LÄUFER</span>,<br>NUR NOCH <em>ZIEL</em> IM BLICK.</h1>
+  <h1>HALLO <span id="nameDisp">LÄUFER</span>,<br>NOCH <em id="daysLeft">--</em> TAGE BIS ZUM <em>ZIEL.</em></h1>
   <div class="cd-container">
     <div class="cd-box"><span class="cd-num" id="cd-d">00</span><span class="cd-unit">Tage</span></div>
     <div class="cd-box"><span class="cd-num" id="cd-h">00</span><span class="cd-unit">Std</span></div>
@@ -112,23 +113,23 @@ input:focus{border-color:var(--accent)}
   </div>
 
   <div class="sidebar-card">
-    <div class="section-title">Lauf Planen</div>
+    <div class="section-title">Planen & Tracken</div>
     <div class="form-group">
         <span class="label">Datum</span>
         <input type="date" id="f-date">
     </div>
     <div class="form-group">
-        <span class="label">Distanz (km)</span>
-        <input type="number" step="0.1" id="f-dist" placeholder="z.B. 12.5" oninput="calcMissing()">
+        <span class="label">Was steht an? / Notiz</span>
+        <textarea id="f-note" placeholder="z.B. 5km locker in Pace 6:15-6:30..."></textarea>
     </div>
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px">
         <div class="form-group">
-            <span class="label">Zeit (Min)</span>
-            <input type="number" id="f-time" placeholder="60" oninput="calcMissing()">
+            <span class="label">KM (für Statistik)</span>
+            <input type="number" step="0.1" id="f-dist" placeholder="10">
         </div>
         <div class="form-group">
-            <span class="label">Pace (min/km)</span>
-            <input type="text" id="f-pace" placeholder="5:30" oninput="calcFromPace()">
+            <span class="label">Zeit (Minuten)</span>
+            <input type="number" id="f-time" placeholder="60">
         </div>
     </div>
     <div class="form-group">
@@ -162,33 +163,13 @@ input:focus{border-color:var(--accent)}
 </div>
 
 <script>
-let runs = JSON.parse(localStorage.getItem('m_runs_pro')) || [];
-let cfg = JSON.parse(localStorage.getItem('m_cfg_pro')) || { name: 'Champion', mDate: '' };
+let runs = JSON.parse(localStorage.getItem('m_runs_v4')) || [];
+let cfg = JSON.parse(localStorage.getItem('m_cfg_v4')) || { name: 'Läufer', mDate: '' };
 let weekOffset = 0;
 
 function save(){ 
-    localStorage.setItem('m_runs_pro', JSON.stringify(runs));
-    localStorage.setItem('m_cfg_pro', JSON.stringify(cfg));
-}
-
-function calcMissing(){
-    const dist = parseFloat(document.getElementById('f-dist').value);
-    const time = parseFloat(document.getElementById('f-time').value);
-    if(dist && time){
-        const p = time / dist;
-        const m = Math.floor(p), s = Math.round((p-m)*60);
-        document.getElementById('f-pace').value = `${m}:${s.toString().padStart(2,'0')}`;
-    }
-}
-
-function calcFromPace(){
-    const dist = parseFloat(document.getElementById('f-dist').value);
-    const paceStr = document.getElementById('f-pace').value;
-    if(dist && paceStr.includes(':')){
-        const parts = paceStr.split(':');
-        const min = parseFloat(parts[0]) + (parseFloat(parts[1])/60);
-        document.getElementById('f-time').value = Math.round(min * dist);
-    }
+    localStorage.setItem('m_runs_v4', JSON.stringify(runs));
+    localStorage.setItem('m_cfg_v4', JSON.stringify(cfg));
 }
 
 function refresh(){
@@ -201,15 +182,15 @@ function refresh(){
 
 function updateStats(){
     const done = runs.filter(r => !r.isPlanned);
-    const totalKm = done.reduce((s,r)=> s + r.dist, 0);
+    const totalKm = done.reduce((s,r)=> s + (parseFloat(r.dist)||0), 0);
     document.getElementById('s-dist').textContent = totalKm.toFixed(1);
     document.getElementById('s-count').textContent = done.length;
-    if(done.length > 0){
-        const totalMin = done.reduce((s,r)=> s + (r.time || 0), 0);
+    if(done.length > 0 && totalKm > 0){
+        const totalMin = done.reduce((s,r)=> s + (parseInt(r.time) || 0), 0);
         const p = totalMin / totalKm;
         const m = Math.floor(p), s = Math.round((p-m)*60);
         document.getElementById('s-pace').textContent = `${m}:${s.toString().padStart(2,'0')}`;
-        document.getElementById('s-long').textContent = Math.max(...done.map(r=>r.dist)).toFixed(1);
+        document.getElementById('s-long').textContent = Math.max(...done.map(r=>parseFloat(r.dist)||0)).toFixed(1);
     }
 }
 
@@ -230,15 +211,20 @@ function renderPlan(){
         
         let runHtml = '';
         dayRuns.forEach(r => {
-            const pace = r.time > 0 ? (r.time / r.dist) : 0;
-            const pm = Math.floor(pace), ps = Math.round((pace-pm)*60);
+            let paceHtml = '';
+            if(r.time > 0 && r.dist > 0) {
+                const pace = r.time / r.dist;
+                const pm = Math.floor(pace), ps = Math.round((pace-pm)*60);
+                paceHtml = `<span class="run-meta">${pm}:${ps.toString().padStart(2,'0')} min/km</span>`;
+            }
+
             runHtml += `
-                <div class="run-details">
-                    <span class="badge ${r.type}" style="font-size:0.6rem">${r.type}</span>
-                    <b>${r.dist} km</b>
-                    <span class="pace-tag">${pm}:${ps.toString().padStart(2,'0')} min/km</span>
-                    <div style="color:var(--muted); font-size:0.7rem">${r.time} Min. ${r.isPlanned ? '' : '✅'}</div>
-                    <button onclick="delRun(${r.id})" style="background:none; border:none; color:red; cursor:pointer; font-size:0.6rem">Löschen</button>
+                <div class="run-entry" style="border-left-color: var(--${r.type === 'easy' ? 'green' : r.type === 'tempo' ? 'amber' : r.type === 'long' ? 'accent' : 'purple'})">
+                    <b>${r.dist > 0 ? r.dist + ' KM' : r.type.toUpperCase()}</b>
+                    ${paceHtml}
+                    ${r.note ? `<div class="run-note">${r.note}</div>` : ''}
+                    ${!r.isPlanned ? '<div style="color:var(--green); font-size:0.6rem; font-weight:800; margin-top:5px">✓ ERLEDIGT</div>' : ''}
+                    <button class="btn-del" onclick="delRun(${r.id})">Löschen ✕</button>
                 </div>`;
         });
 
@@ -247,7 +233,7 @@ function renderPlan(){
                 <div class="day-n">${['Mo','Di','Mi','Do','Fr','Sa','So'][i]}</div>
                 <div class="day-v">${d.getDate()}</div>
             </div>
-            ${runHtml || '<div style="color:var(--border); font-size:0.7rem; margin-top:1rem">Kein Lauf</div>'}
+            ${runHtml || '<div style="color:var(--s3); font-size:0.7rem; margin-top:1rem; text-align:center">Kein Lauf</div>'}
         `;
         grid.appendChild(div);
     }
@@ -255,11 +241,21 @@ function renderPlan(){
 
 function addRun(isPlanned){
     const d = document.getElementById('f-date').value;
-    const km = parseFloat(document.getElementById('f-dist').value);
-    const t = parseFloat(document.getElementById('f-time').value) || 0;
+    const km = parseFloat(document.getElementById('f-dist').value) || 0;
+    const t = parseInt(document.getElementById('f-time').value) || 0;
+    const nt = document.getElementById('f-note').value;
     const ty = document.getElementById('f-type').value;
-    if(!d || !km) return alert("Datum und Distanz eingeben!");
-    runs.push({ id: Date.now(), date: d, dist: km, time: t, type: ty, isPlanned });
+    
+    if(!d) return alert("Datum fehlt!");
+    if(!km && !nt) return alert("Bitte entweder KM oder eine Notiz eingeben!");
+
+    runs.push({ id: Date.now(), date: d, dist: km, time: t, note: nt, type: ty, isPlanned: isPlanned });
+    
+    // Reset fields
+    document.getElementById('f-dist').value = '';
+    document.getElementById('f-time').value = '';
+    document.getElementById('f-note').value = '';
+    
     refresh();
 }
 
@@ -267,9 +263,11 @@ function delRun(id){ runs = runs.filter(r => r.id !== id); refresh(); }
 
 function updateCountdown(){
     if(!cfg.mDate) return;
-    const diff = new Date(cfg.mDate + "T00:00:00") - new Date();
+    const target = new Date(cfg.mDate + "T00:00:00");
+    const diff = target - new Date();
+    
     if(diff < 0){
-        document.getElementById('cd-d').textContent = "00";
+        document.getElementById('daysLeft').textContent = "0";
         return;
     }
     const d = Math.floor(diff / 86400000);
@@ -277,6 +275,7 @@ function updateCountdown(){
     const m = Math.floor((diff % 3600000) / 60000);
     const s = Math.floor((diff % 60000) / 1000);
     
+    document.getElementById('daysLeft').textContent = d;
     document.getElementById('cd-d').textContent = d.toString().padStart(2,'0');
     document.getElementById('cd-h').textContent = h.toString().padStart(2,'0');
     document.getElementById('cd-m').textContent = m.toString().padStart(2,'0');
